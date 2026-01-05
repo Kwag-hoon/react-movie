@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Kwag-hoon/react-movie/static/css/main.55d501a3.css",
-    "main.js": "/Kwag-hoon/react-movie/static/js/main.f75a0803.js",
-    "index.html": "/Kwag-hoon/react-movie/index.html",
-    "main.55d501a3.css.map": "/Kwag-hoon/react-movie/static/css/main.55d501a3.css.map",
-    "main.f75a0803.js.map": "/Kwag-hoon/react-movie/static/js/main.f75a0803.js.map"
+    "main.css": "/react-movie/static/css/main.55d501a3.css",
+    "main.js": "/react-movie/static/js/main.bcc2446e.js",
+    "index.html": "/react-movie/index.html",
+    "main.55d501a3.css.map": "/react-movie/static/css/main.55d501a3.css.map",
+    "main.bcc2446e.js.map": "/react-movie/static/js/main.bcc2446e.js.map"
   },
   "entrypoints": [
     "static/css/main.55d501a3.css",
-    "static/js/main.f75a0803.js"
+    "static/js/main.bcc2446e.js"
   ]
 }
