@@ -1,0 +1,141 @@
+:root {
+  --card-bg: #fff;
+  --card-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  --text-muted: #5d5d5d;
+  --accent: #1a73e8;
+  --border: #e9e9e9;
+  --rating: #ff7f2a;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  justify-content: center;
+  gap: 24px;
+  padding: 20px 24px;
+}
+
+.movie-card {
+  display: grid;
+  grid-template-columns: 160px 1fr 56px;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  height: 300px;
+}
+ 
+.card-link {
+  display: contents;
+}
+
+.poster-wrap {
+  width: 160px;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms ease;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  display: grid;
+  gap: 6px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.year {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.genres {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.summary {
+  color: var(--text-muted);
+  font-size: 14px;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.trophy {
+  font-size: 18px;
+}
+
+.score {
+  color: var(--rating);
+  font-weight: 700;
+}
+
+.detail-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16px 24px 0 24px;
+}
+
+.back-btn {
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+.back-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.movie-card:hover .poster-wrap {
+  transform: translateY(-50px);
+}
+
+@media screen and (max-width: 1200px) {
+  .movie-list {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .movie-card {
+    width: 100%;
+    grid-template-columns: 140px 1fr 56px;
+  }
+  .poster-wrap {
+    width: 140px;
+    height: 200px;
+  }
+  .summary {
+    width: 100%;
+  }
+}
